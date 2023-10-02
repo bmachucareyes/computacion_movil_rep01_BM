@@ -10,7 +10,7 @@ class ContainerUno extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
         onTap: () {
-          // Navegar a la segunda página cuando se toca la imagen.
+          // Navegar a la tercera página cuando se toca la imagen.
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => const Pag2()),

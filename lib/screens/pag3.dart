@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:unidad2/main.dart';
-import 'package:unidad2/widgets/widgets.dart';
+import 'package:unidad2/widgets/widgets.dart'
+    show Encabezado, EstiloEncabezado, EstiloLista, EstiloParrafo;
 
 class Pag3 extends StatelessWidget {
   const Pag3({super.key});
