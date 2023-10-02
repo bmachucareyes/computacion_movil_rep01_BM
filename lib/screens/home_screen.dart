@@ -9,13 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Row(
+          title: const Row(
             children: [
-              Image.asset(
-                'assets/MedlinePlus.png',
-                height: 100,
-                width: 320,
-              ),
+              Encabezado(),
             ],
           ),
         ),
