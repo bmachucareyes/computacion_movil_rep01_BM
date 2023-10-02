@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:unidad2/widgets/widgets.dart';
 
+//Se utiliza como base sitio de MedlinePlus https://medlineplus.gov/spanish/acercade/
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 

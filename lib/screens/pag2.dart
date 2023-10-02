@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:unidad2/widgets/enlacePiel.dart';
 import 'package:unidad2/widgets/widgets.dart';
 
 class Pag2 extends StatelessWidget {
@@ -7,14 +8,15 @@ class Pag2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Row(
-            children: [
-              Encabezado(),
-            ],
-          ),
+      appBar: AppBar(
+        title: const Row(
+          children: [
+            Encabezado(),
+          ],
         ),
-        body: const Padding(
+      ),
+      body: const SingleChildScrollView(
+        child: Padding(
           padding: EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,6 +35,8 @@ class Pag2 extends StatelessWidget {
                   'MedlinePlus ofrece información sobre cerca de 300 pruebas médicas que se usan para detectar, diagnosticar y guiar el tratamiento de diversas afecciones de salud. Cada descripción de estos exámenes incluye para qué se usa la prueba, por qué un profesional de la salud puede solicitarla, en qué consiste y qué significan sus resultados'),
             ],
           ),
-        ));
+        ),
+      ),
+    );
   }
 }
