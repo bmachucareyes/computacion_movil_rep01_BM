@@ -7,12 +7,10 @@ class ContainerTres extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Image(
-        image: AssetImage('assets/3.png'),
-        height: 100,
-        width: 320,
-      ),
+    return const Image(
+      image: AssetImage('assets/3.png'),
+      height: 100,
+      width: 320,
     );
   }
 }

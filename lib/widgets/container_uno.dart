@@ -1,4 +1,8 @@
+import 'dart:ffi';
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:unidad2/screens/pag2.dart';
 
 class ContainerUno extends StatelessWidget {
   const ContainerUno({
@@ -7,12 +11,20 @@ class ContainerUno extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Image(
-        image: AssetImage('assets/Uno.png'),
-        height: 100,
-        width: 320,
-      ),
+    return 
+    InkWell(
+          onTap: () {
+            // Navegar a la segunda página cuando se toca la imagen.
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => pag2()),
+            );
+          },
+    
+    child: const Image(
+      image: AssetImage('assets/Uno.png'),
+      height: 100,
+      width: 320,
     );
   }
 }

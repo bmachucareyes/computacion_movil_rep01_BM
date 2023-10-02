@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:io';
-import 'package:flutter/rendering.dart';
 import 'package:unidad2/routes/app_routes.dart';
 
 void main() {
