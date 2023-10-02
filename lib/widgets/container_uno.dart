@@ -13,7 +13,7 @@ class ContainerUno extends StatelessWidget {
           // Navegar a la segunda página cuando se toca la imagen.
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => Pag2()),
+            MaterialPageRoute(builder: (context) => const Pag2()),
           );
         },
         child: const Image(
