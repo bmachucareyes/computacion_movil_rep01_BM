@@ -76,16 +76,21 @@ class EstiloLista extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: items.length,
-      itemBuilder: (context, index) {
-        return ListTile(
-          leading: CircleAvatar(
-            child: Text((index + 1).toString()),
-          ),
-          title: Text(items[index]),
-        );
-      },
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: items
+          .asMap()
+          .entries
+          .map(
+            (entry) => ListTile(
+              contentPadding:
+                  const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+              title: Text(
+                '${entry.key + 1}. ${entry.value}',
+              ),
+            ),
+          )
+          .toList(),
     );
   }
 }

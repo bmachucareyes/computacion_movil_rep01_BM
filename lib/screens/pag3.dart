@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:unidad2/widgets/widgets.dart'
-    show Encabezado, EstiloEncabezado, EstiloLista, EstiloParrafo;
+import 'package:unidad2/widgets/widgets.dart';
 
 class Pag3 extends StatelessWidget {
   const Pag3({super.key});
@@ -31,7 +30,7 @@ class Pag3 extends StatelessWidget {
                 'Introducción de los temas de salud',
                 'Información de pruebas médicas',
                 'Recetas saludables'
-              ]),
+              ])
             ],
           ),
         ));
