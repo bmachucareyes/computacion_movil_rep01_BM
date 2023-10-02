@@ -58,13 +58,34 @@ class EstiloParrafoSangria extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 16.0), // Espaciado izquierdo
+      padding: const EdgeInsets.only(left: 16.0),
       child: Text(
         text,
         style: const TextStyle(
-          fontSize: 16, // Tamaño del texto
+          fontSize: 16,
         ),
       ),
+    );
+  }
+}
+
+class EstiloLista extends StatelessWidget {
+  final List<String> items;
+
+  const EstiloLista(this.items, {super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(
+      itemCount: items.length,
+      itemBuilder: (context, index) {
+        return ListTile(
+          leading: CircleAvatar(
+            child: Text((index + 1).toString()),
+          ),
+          title: Text(items[index]),
+        );
+      },
     );
   }
 }
